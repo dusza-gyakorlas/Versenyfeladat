@@ -1,0 +1,2 @@
+# Versenyfeladat
+Just practicing together
