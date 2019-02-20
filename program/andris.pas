@@ -5,7 +5,7 @@ unit Andris;
 interface
 
 uses
-  Classes, SysUtils StrUtils;
+  Classes, SysUtils, StrUtils, global;
 
 implementation
 
@@ -62,8 +62,20 @@ begin
 end;
 
 function incidensek():integer;
+var i:integer;
 begin
-
+  incidensek:=0;
+  //gyorshajtás
+  for i:=2 to adatokhossz-1 do begin
+    if adatok[i].allapot=0 then begin
+      if (adatok[i].v) > (terkep[ (((adatok[i].x) div 10)+1),(((adatok[i].y) div 10)+1  ]
+        then incidensek:=incidensek+1;
+    end;
+  end;
+  //hirtelen dolgok
+  for i:=2 to adatokhossz-1 do begin
+    if (adatok[i].a>2,5) or (adatok[i].a<-2,5) then incidensek:=incidensek+1;
+  end;
 end;
 
 end.
