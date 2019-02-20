@@ -8,6 +8,25 @@ uses
   Classes, SysUtils;
 
 implementation
+procedure meghataroz;
+var s,t,v:real;
+     i:int32.
+begin
+  for i:=1 to adatokhossz do begin
+    if adatok[i].allapot=0 then begin
+     if adatok[i-1].allapot=0 then begin
+      t:=adatok[i].t-adatok[i-1].t;
+      s:=sqrt(sqr(adatok[i].x-adatok[i-1].x)+sqr(adatok[i].y-adatok[i-1].y));
+      adatok[i].v:=s/t;
+      adatok[i].a:=adatok[i].v-adatok[i-1].v;
+     end else begin
+      adatok[i].v:=0;
+      adatok[i].a:=0;
+     end;
+   end;
+  end;
+end;
+
 procedure lekerdezes(t:real);
 var x0,x1,y0,y1,v,v0,v1,t,t0,t1,a,s:real;
   i,j:int32;
