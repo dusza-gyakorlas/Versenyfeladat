@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, Global;
-
+procedure meghataroz;
+procedure lekerdezes(t:real);
 implementation
 procedure meghataroz;
 var s,t,v:real;
