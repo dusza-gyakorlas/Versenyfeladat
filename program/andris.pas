@@ -21,11 +21,11 @@ begin
   erkezik:=erkezik+' '+adatok[adatokhossz-1].y;
 end;
 
-function teljesut():integer;
+function teljesut():real;
 var i,j:integer;
 begin
   teljesut:=0;
-  for i:=3 to hossz do begin
+  for i:=3 to hossz-1 do begin
     if adatok[i].allapot=0 then begin
       for j:=i-1 downto 2 do begin
         if adatok[j].allapot=0 then begin
@@ -33,6 +33,30 @@ begin
             sqr((adatok[i].y)-(adatok[j].y)) ));
         end;
       end;
+    end;
+  end;
+end;
+
+function atlagv():real;
+var i,koordszam:integer;
+begin
+  koordszam:=0;
+  for i:=2 to hossz-1 do begin
+    if adatok[i].allapot=0 then begin
+      koordszam:=koordszam+1;
+      atlagv:=atlagv+abs(adatok[i].v);
+    end;
+  end;
+  atlagv:=atlagv div koordszam;
+end;
+
+function maxv():real;
+var i:integer;
+begin
+  maxv:=-1;
+  for i:=2 to hossz-1 do begin
+    if adatok[i].allapot=0 then begin
+      if adatok[i].v>maxv then maxv:=abs(adatok[i].v);
     end;
   end;
 end;
