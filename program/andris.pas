@@ -7,6 +7,13 @@ interface
 uses
   Classes, SysUtils, StrUtils, global;
 
+function kiindul():string;
+function erkezik():string;
+function teljesut():real;
+function atlagv():real;
+function maxv():real;
+function incidensek():integer;
+
 implementation
 
 function kiindul():string;
@@ -67,9 +74,12 @@ var i:integer;
 begin
   incidensek:=0;
   //gyorshajtás
-
-
-
+  for i:=2 to adatokhossz-1 do begin
+    if adatok[i].allapot=0 then begin
+      if (adatok[i].v) > (terkep[ (trunc((adatok[i].x) / 10)+1) ][ (trunc((adatok[i].y) / 10)+1)  ])
+        then incidensek:=incidensek+1;
+    end;
+  end;
 
   //hirtelen dolgok
   for i:=2 to adatokhossz-1 do begin

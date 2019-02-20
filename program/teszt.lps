@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="teszt.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="13" Y="5"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="andris.pas"/>
+        <UnitName Value="Andris"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="6"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="andrisregi.pas"/>
+        <UnitName Value="Andris"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="8" Y="74"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="dani.pas"/>
+        <UnitName Value="Dani"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="16" Y="12"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="16" HistoryIndex="15">
+      <Position1>
+        <Filename Value="teszt.lpr"/>
+        <Caret Line="4" Column="8"/>
+      </Position1>
+      <Position2>
+        <Filename Value="andris.pas"/>
+        <Caret Line="14" Column="18"/>
+      </Position2>
+      <Position3>
+        <Filename Value="andris.pas"/>
+        <Caret Line="71" Column="78" TopLine="29"/>
+      </Position3>
+      <Position4>
+        <Filename Value="andris.pas"/>
+        <Caret Line="14" Column="18" TopLine="5"/>
+      </Position4>
+      <Position5>
+        <Filename Value="andris.pas"/>
+        <Caret Line="47" Column="22" TopLine="21"/>
+      </Position5>
+      <Position6>
+        <Filename Value="andris.pas"/>
+        <Caret Line="73" Column="90" TopLine="31"/>
+      </Position6>
+      <Position7>
+        <Filename Value="dani.pas"/>
+        <Caret Line="15"/>
+      </Position7>
+      <Position8>
+        <Filename Value="dani.pas"/>
+        <Caret Line="14" Column="14"/>
+      </Position8>
+      <Position9>
+        <Filename Value="dani.pas"/>
+        <Caret Line="31" Column="23"/>
+      </Position9>
+      <Position10>
+        <Filename Value="dani.pas"/>
+        <Caret Line="14" Column="14" TopLine="30"/>
+      </Position10>
+      <Position11>
+        <Filename Value="teszt.lpr"/>
+        <Caret Line="12" Column="10"/>
+      </Position11>
+      <Position12>
+        <Filename Value="teszt.lpr"/>
+        <Caret Line="6" Column="11"/>
+      </Position12>
+      <Position13>
+        <Filename Value="teszt.lpr"/>
+        <Caret Line="10" Column="11"/>
+      </Position13>
+      <Position14>
+        <Filename Value="teszt.lpr"/>
+        <Caret Line="2" Column="21"/>
+      </Position14>
+      <Position15>
+        <Filename Value="teszt.lpr"/>
+        <Caret Line="11" Column="21"/>
+      </Position15>
+      <Position16>
+        <Filename Value="teszt.lpr"/>
+        <Caret Line="5" Column="13"/>
+      </Position16>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
