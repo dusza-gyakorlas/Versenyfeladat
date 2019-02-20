@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="teszt1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="10" Y="8"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="beolvas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="6" Y="5"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="7" HistoryIndex="6">
+      <Position1>
+        <Filename Value="beolvas.pas"/>
+        <Caret Line="21" Column="34"/>
+      </Position1>
+      <Position2>
+        <Filename Value="beolvas.pas"/>
+        <Caret Line="15" Column="16"/>
+      </Position2>
+      <Position3>
+        <Filename Value="beolvas.pas"/>
+        <Caret Line="19" Column="29"/>
+      </Position3>
+      <Position4>
+        <Filename Value="teszt1.lpr"/>
+        <Caret Line="7" Column="10"/>
+      </Position4>
+      <Position5>
+        <Filename Value="teszt1.lpr"/>
+        <Caret Line="8"/>
+      </Position5>
+      <Position6>
+        <Filename Value="teszt1.lpr"/>
+        <Caret Line="6" Column="10"/>
+      </Position6>
+      <Position7>
+        <Filename Value="teszt1.lpr"/>
+        <Caret Line="7" Column="9"/>
+      </Position7>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

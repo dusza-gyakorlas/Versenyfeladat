@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="teszt2.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="16" Y="6"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="maxkiv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="2" Y="21"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="7" HistoryIndex="6">
+      <Position1>
+        <Filename Value="teszt2.lpr"/>
+        <Caret Line="8" Column="16"/>
+      </Position1>
+      <Position2>
+        <Filename Value="maxkiv.pas"/>
+        <Caret Line="16" Column="15"/>
+      </Position2>
+      <Position3>
+        <Filename Value="maxkiv.pas"/>
+        <Caret Line="6" Column="21"/>
+      </Position3>
+      <Position4>
+        <Filename Value="maxkiv.pas"/>
+        <Caret Line="10" Column="23"/>
+      </Position4>
+      <Position5>
+        <Filename Value="maxkiv.pas"/>
+        <Caret Line="12" Column="13"/>
+      </Position5>
+      <Position6>
+        <Filename Value="maxkiv.pas"/>
+        <Caret Line="9" Column="23"/>
+      </Position6>
+      <Position7>
+        <Filename Value="teszt2.lpr"/>
+        <Caret Line="3" Column="19"/>
+      </Position7>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
