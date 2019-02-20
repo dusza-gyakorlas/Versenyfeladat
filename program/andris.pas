@@ -11,13 +11,13 @@ implementation
 
 function kiindul():string;
 begin
-  kiindul:=adatok[1].x;
+  kiindul:=floattostr(adatok[1].x);
   kiindul:=kiindul+' '+floattostr(adatok[1].y);
 end;
 
 function erkezik():string;
 begin
-  erkezik:=(adatok[adatokhossz-1].x);
+  erkezik:=floattostr((adatok[adatokhossz-1].x));
   erkezik:=erkezik+' '+floattostr(adatok[adatokhossz-1].y);
 end;
 
@@ -41,6 +41,7 @@ function atlagv():real;
 var i,koordszam:integer;
 begin
   koordszam:=0;
+  atlagv:=0;
   for i:=2 to adatokhossz-1 do begin
     if adatok[i].allapot=0 then begin
       koordszam:=koordszam+1;
@@ -66,15 +67,13 @@ var i:integer;
 begin
   incidensek:=0;
   //gyorshajtás
-  for i:=2 to adatokhossz-1 do begin
-    if adatok[i].allapot=0 then begin
-      if (adatok[i].v) > (terkep[ (((adatok[i].x) div 10)+1),(((adatok[i].y) div 10)+1)  ])
-        then incidensek:=incidensek+1;
-    end;
-  end;
+
+
+
+
   //hirtelen dolgok
   for i:=2 to adatokhossz-1 do begin
-    if (adatok[i].a>2,5) or (adatok[i].a<-2,5) then incidensek:=incidensek+1;
+    if (adatok[i].a>2.5) or (adatok[i].a<-2.5) then incidensek:=incidensek+1;
   end;
 end;
 
