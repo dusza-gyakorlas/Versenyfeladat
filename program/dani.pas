@@ -5,7 +5,7 @@ unit Dani;
 interface
 
 uses
-  Classes, SysUtils,Global;
+  Classes, SysUtils, Global;
 
 implementation
 procedure meghataroz;
