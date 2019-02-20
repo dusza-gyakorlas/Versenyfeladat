@@ -29,7 +29,7 @@ begin
 end;
 
 procedure lekerdezes(t:real);
-var x0,x1,y0,y1,v,v0,v1,t,t0,t1,a,s:real;
+var x,x0,x1,y,y0,y1,v,v0,v1,t0,t1,a,s:real;
   i,j:int32;
 
 begin
@@ -45,7 +45,7 @@ begin
    end;
 
 
-   adatok[i-1].t=t then a:=adatok[i-1].a         //kiszámolja a gyorsulását
+   if adatok[i-1].t=t then a:=adatok[i-1].a         //kiszámolja a gyorsulását
    else a:=(adatok[i-1].a+adatok[i].a)/2;
 
    x0:=adatok[i-1].x;                        //v0..megadja
@@ -59,22 +59,24 @@ begin
     s:=v0*(t-t0)+(a/2)*sqr(t-t0);            //mekkora utat tett meg az autó a legutóbbi mintavétel óta
 
     if x0<>x1 then begin
-      if x1>x0 then writeln(x0+s)
-      else writeln(x0-s);
+      if x1>x0 then x:=x0+s
+      else x:=x0-s;
     end;                                    //autó pozícióját kiírja
 
     if y0<>y1 then begin
-      if y1>y0 then writeln(y0+s)
-      else writeln(y0-s);
+      if y1>y0 then y:=y0+s
+      else y:=y0-s;
     end;
+    write(x);
+    write(' ');
+    writeln(y);
 
    v:=v0+a*(t-t0);                          //aktuális sebesség kiírása
 
    writeln(a);                             //aktuális gyorsulás kiírása
+   if v*3.6>terkep[trunc(x) mod 10,trunc(y) mod 10] then writeln('Az autó túl gyorsan megy');
 
-   if v*3,6>terkep[x,y] then writeln('Az autó túl gyorsan megy');
-
-   if a>2,5 then writeln('AZ autó hirtelen gyorsul');
-   if a<-2,5 then writeln('Az autó hirtelen lassul');
-end.
+   if a>2.5 then writeln('AZ autó hirtelen gyorsul');
+   if a<-2.5 then writeln('Az autó hirtelen lassul');
+end;
 
