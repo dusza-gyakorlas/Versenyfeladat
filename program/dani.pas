@@ -11,7 +11,7 @@ procedure lekerdezes(t:real);
 implementation
 procedure meghataroz;
 var s,t,v:real;
-     i:int32.
+     i:int32;
 begin
   for i:=1 to adatokhossz do begin
     if adatok[i].allapot=0 then begin
@@ -79,4 +79,4 @@ begin
    if a>2.5 then writeln('AZ autó hirtelen gyorsul');
    if a<-2.5 then writeln('Az autó hirtelen lassul');
 end;
-
+end.
