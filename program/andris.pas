@@ -68,7 +68,7 @@ begin
   //gyorshajtás
   for i:=2 to adatokhossz-1 do begin
     if adatok[i].allapot=0 then begin
-      if (adatok[i].v) > (terkep[ (((adatok[i].x) div 10)+1),(((adatok[i].y) div 10)+1  ]
+      if (adatok[i].v) > (terkep[ (((adatok[i].x) div 10)+1),(((adatok[i].y) div 10)+1)  ])
         then incidensek:=incidensek+1;
     end;
   end;
