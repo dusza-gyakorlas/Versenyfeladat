@@ -5,27 +5,27 @@ unit Andris;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils StrUtils;
 
 implementation
 
 function kiindul():string;
 begin
   kiindul:=adatok[1].x;
-  kiindul:=kiindul+' '+adatok[1].y;
+  kiindul:=kiindul+' '+floattostr(adatok[1].y);
 end;
 
 function erkezik():string;
 begin
   erkezik:=(adatok[adatokhossz-1].x);
-  erkezik:=erkezik+' '+adatok[adatokhossz-1].y;
+  erkezik:=erkezik+' '+floattostr(adatok[adatokhossz-1].y);
 end;
 
 function teljesut():real;
 var i,j:integer;
 begin
   teljesut:=0;
-  for i:=3 to hossz-1 do begin
+  for i:=3 to adatokhossz-1 do begin
     if adatok[i].allapot=0 then begin
       for j:=i-1 downto 2 do begin
         if adatok[j].allapot=0 then begin
@@ -41,24 +41,29 @@ function atlagv():real;
 var i,koordszam:integer;
 begin
   koordszam:=0;
-  for i:=2 to hossz-1 do begin
+  for i:=2 to adatokhossz-1 do begin
     if adatok[i].allapot=0 then begin
       koordszam:=koordszam+1;
       atlagv:=atlagv+abs(adatok[i].v);
     end;
   end;
-  atlagv:=atlagv div koordszam;
+  atlagv:=atlagv / koordszam;
 end;
 
 function maxv():real;
 var i:integer;
 begin
   maxv:=-1;
-  for i:=2 to hossz-1 do begin
+  for i:=2 to adatokhossz-1 do begin
     if adatok[i].allapot=0 then begin
       if adatok[i].v>maxv then maxv:=abs(adatok[i].v);
     end;
   end;
+end;
+
+function incidensek():integer;
+begin
+
 end;
 
 end.
